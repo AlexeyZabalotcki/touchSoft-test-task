@@ -27,14 +27,12 @@ public class Consumer {
         sum += number;
     }
 
-
     public double mean() {
         if (window.isEmpty()) {
             return 0;
         }
         return sum / (double) window.size();
     }
-
 
     private static class DataPoint {
         int value;
